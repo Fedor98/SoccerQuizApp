@@ -32,25 +32,26 @@ public class MainActivity extends AppCompatActivity {
         //Check if a radio button has been clicked, and, if so, display Next button
         RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_1);
         rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                           @Override
-                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                               switch (checkedId) {
-                                                   case R.id.radio_button_a_q1:
-                                                       View nb1 = findViewById(R.id.nb1);
-                                                       nb1.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_b_q1:
-                                                       nb1 = findViewById(R.id.nb1);
-                                                       nb1.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_c_q1:
-                                                       nb1 = findViewById(R.id.nb1);
-                                                       nb1.setVisibility(View.VISIBLE);
-                                                       break;
-                                               }
-                                           }
-                                       }
+               @Override
+               public void onCheckedChanged(RadioGroup group, int checkedId) {
+                   switch (checkedId) {
+                       case R.id.radio_button_a_q1:
+                           View nb1 = findViewById(R.id.nb1);
+                           nb1.setVisibility(View.VISIBLE);
+                           break;
+                       case R.id.radio_button_b_q1:
+                           nb1 = findViewById(R.id.nb1);
+                           nb1.setVisibility(View.VISIBLE);
+                           break;
+                       case R.id.radio_button_c_q1:
+                           nb1 = findViewById(R.id.nb1);
+                           nb1.setVisibility(View.VISIBLE);
+                           break;
+                   }
+               }
+           }
         );
+
     }
 
     /**

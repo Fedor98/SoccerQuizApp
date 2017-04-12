@@ -3,6 +3,10 @@
     style="@style/LinearLayoutTheme">
 
     <TextView
+        style="@style/HeaderTextStyle"
+        android:text="@string/q_5"/>
+
+    <TextView
         style="@style/QuestionTextView"
         android:text="@string/question_5" />
 

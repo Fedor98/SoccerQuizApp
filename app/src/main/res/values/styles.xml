@@ -16,6 +16,16 @@
         <item name="android:padding">@dimen/padding</item>
     </style>
 
+    <!-- Style for showing "Question X)" -->
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+    </style>
+
     <!-- Layout for Start Quiz button. -->
     <style name="StartQuizButtonTheme">
         <item name="android:layout_width">match_parent</item>
