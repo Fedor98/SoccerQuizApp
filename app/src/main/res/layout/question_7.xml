@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutTheme">
+
+    <TextView
+        style="@style/QuestionTextView"
+        android:text="@string/question_7" />
+
+    <EditText
+        android:id="@+id/answer_question_7"
+        style="@style/EditTextTheme"
+        android:hint="@string/hint_q7" />
+
+    <Button
+        android:id="@+id/nb7"
+        style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
+        android:onClick="nextQuestion7" />
+
+</LinearLayout>

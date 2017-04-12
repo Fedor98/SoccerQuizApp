@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- LinearLayout theme. -->
+    <style name="LinearLayoutTheme">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+    <!-- Layout for Start Quiz button. -->
+    <style name="StartQuizButtonTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/colorQuestion</item>
+    </style>
+
+    <!-- Layout for Question TextViews. -->
+    <style name="QuestionTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textColor">@color/colorQuestion</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+    </style>
+
+    <!-- Layout for Radio Groups. -->
+    <style name="RadioGroupTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Layout for Radio buttons. -->
+    <style name="RadioButtonTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Layout for the Next Question and Submit and View results buttons. -->
+    <style name="StartQuizButtonTheme.NQSVRButtonTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:text">@string/next_button</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- Layout for EditText views. -->
+    <style name="EditTextTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/answer_textSize</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+    </style>
+
+    <!-- Layout for Checkboxes. -->
+    <style name="CheckBoxTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_marginBottom">@dimen/marginBottom</item>
+    </style>
+
+</resources>
