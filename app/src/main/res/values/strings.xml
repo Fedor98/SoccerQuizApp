@@ -18,6 +18,7 @@
     <string name="answer_2_b">3</string>
     <string name="answer_2_c">4</string>
     <string name="question_3">How many minutes does a soccer match typically last?</string>
+    <string name="hint_q3"><i>Type your answer in here</i></string>
     <string name="answer_3"><xliff:g example="90" id="minutes">%d</xliff:g></string>
     <string name="question_4">How many officials are there in a soccer match in the German Bundesliga?</string>
     <string name="answer_4_a">2</string>
