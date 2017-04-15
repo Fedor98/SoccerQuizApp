@@ -5,27 +5,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.soccerquizapp.MainActivity">
 
-<LinearLayout style="@style/LinearLayoutTheme">
+    <LinearLayout style="@style/LinearLayoutTheme">
 
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/q_3"/>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/q_3" />
 
-    <TextView
-        style="@style/QuestionTextView"
-        android:text="@string/question_3" />
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question_3" />
 
-    <EditText
-        android:id="@+id/answer_question_3"
-        style="@style/EditTextTheme"
-        android:gravity="center"
-        android:hint="@string/hint_q3"
-        android:inputType="number" />
+        <EditText
+            android:id="@+id/answer_question_3"
+            style="@style/EditTextTheme"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/hint_q3"
+            android:inputType="number" />
 
-    <Button
-        android:id="@+id/nb3"
-        style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
-        android:onClick="nextQuestion3" />
+        <Button
+            android:id="@+id/nb3"
+            style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
+            android:onClick="nextQuestion3" />
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

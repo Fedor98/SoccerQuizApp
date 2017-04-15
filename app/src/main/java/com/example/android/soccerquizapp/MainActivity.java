@@ -29,29 +29,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 1
         setContentView(R.layout.question_1);
 
-        //Check if a radio button has been clicked, and, if so, display Next button
-        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_1);
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-               @Override
-               public void onCheckedChanged(RadioGroup group, int checkedId) {
-                   switch (checkedId) {
-                       case R.id.radio_button_a_q1:
-                           View nb1 = findViewById(R.id.nb1);
-                           nb1.setVisibility(View.VISIBLE);
-                           break;
-                       case R.id.radio_button_b_q1:
-                           nb1 = findViewById(R.id.nb1);
-                           nb1.setVisibility(View.VISIBLE);
-                           break;
-                       case R.id.radio_button_c_q1:
-                           nb1 = findViewById(R.id.nb1);
-                           nb1.setVisibility(View.VISIBLE);
-                           break;
-                   }
-               }
-           }
-        );
-
+        //Call method which checks for user action
+        checkMarked(findViewById(R.id.radio_button_a_q1), findViewById(R.id.radio_button_b_q1), findViewById(R.id.radio_button_c_q1), findViewById(R.id.nb1));
     }
 
     /**
@@ -69,28 +48,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 2
         setContentView(R.layout.question_2);
 
-        //Check if a radio button has been clicked, and, if so, display Next button
-        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_2);
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                           @Override
-                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                               switch (checkedId) {
-                                                   case R.id.radio_button_a_q2:
-                                                       View nb2 = findViewById(R.id.nb2);
-                                                       nb2.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_b_q2:
-                                                       nb2 = findViewById(R.id.nb2);
-                                                       nb2.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_c_q2:
-                                                       nb2 = findViewById(R.id.nb2);
-                                                       nb2.setVisibility(View.VISIBLE);
-                                                       break;
-                                               }
-                                           }
-                                       }
-        );
+        //Call method which checks for user action
+        checkMarked(findViewById(R.id.radio_button_a_q2), findViewById(R.id.radio_button_b_q2), findViewById(R.id.radio_button_c_q2), findViewById(R.id.nb2));
     }
 
     /**
@@ -147,28 +106,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 4
         setContentView(R.layout.question_4);
 
-        //Check if a radio button has been clicked, and, if so, display Next button
-        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_4);
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                           @Override
-                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                               switch (checkedId) {
-                                                   case R.id.radio_button_a_q4:
-                                                       View nb4 = findViewById(R.id.nb4);
-                                                       nb4.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_b_q4:
-                                                       nb4 = findViewById(R.id.nb4);
-                                                       nb4.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_c_q4:
-                                                       nb4 = findViewById(R.id.nb4);
-                                                       nb4.setVisibility(View.VISIBLE);
-                                                       break;
-                                               }
-                                           }
-                                       }
-        );
+        //Call method which checks for user action
+        checkMarked(findViewById(R.id.radio_button_a_q4), findViewById(R.id.radio_button_b_q4), findViewById(R.id.radio_button_c_q4), findViewById(R.id.nb4));
     }
 
     /**
@@ -186,28 +125,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 5
         setContentView(R.layout.question_5);
 
-        //Check if a radio button has been clicked, and, if so, display Next button
-        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_5);
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                           @Override
-                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                               switch (checkedId) {
-                                                   case R.id.radio_button_a_q5:
-                                                       View nb5 = findViewById(R.id.nb5);
-                                                       nb5.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_b_q5:
-                                                       nb5 = findViewById(R.id.nb5);
-                                                       nb5.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_c_q5:
-                                                       nb5 = findViewById(R.id.nb5);
-                                                       nb5.setVisibility(View.VISIBLE);
-                                                       break;
-                                               }
-                                           }
-                                       }
-        );
+        //Call method which checks for user action
+        checkMarked(findViewById(R.id.radio_button_a_q5), findViewById(R.id.radio_button_b_q5), findViewById(R.id.radio_button_c_q5), findViewById(R.id.nb5));
     }
 
     /**
@@ -225,28 +144,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 6
         setContentView(R.layout.question_6);
 
-        //Check if a radio button has been clicked, and, if so, display Next button
-        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_6);
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                           @Override
-                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                               switch (checkedId) {
-                                                   case R.id.radio_button_a_q6:
-                                                       View nb6 = findViewById(R.id.nb6);
-                                                       nb6.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_b_q6:
-                                                       nb6 = findViewById(R.id.nb6);
-                                                       nb6.setVisibility(View.VISIBLE);
-                                                       break;
-                                                   case R.id.radio_button_c_q6:
-                                                       nb6 = findViewById(R.id.nb6);
-                                                       nb6.setVisibility(View.VISIBLE);
-                                                       break;
-                                               }
-                                           }
-                                       }
-        );
+        //Call method which checks for user action
+        checkMarked(findViewById(R.id.radio_button_a_q6), findViewById(R.id.radio_button_b_q6), findViewById(R.id.radio_button_c_q6), findViewById(R.id.nb6));
     }
 
     /**
@@ -350,5 +249,25 @@ public class MainActivity extends AppCompatActivity {
 
         //Displays toast message with the score
         Toast.makeText(this, getString(R.string.score_message, score), Toast.LENGTH_LONG).show();
+    }
+
+    private void checkMarked(View id1, View id2, View id3, View nbx) {
+
+        //Check if a radio button has been clicked, and, if so, display Next button
+        final RadioButton rb1 = (RadioButton) id1;
+        final RadioButton rb2 = (RadioButton) id2;
+        final RadioButton rb3 = (RadioButton) id3;
+        final Button nb = (Button) nbx;
+
+        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_1);
+        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                                           @Override
+                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
+                                               if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
+                                                   nb.setVisibility(View.VISIBLE);
+                                               }
+                                           }
+                                       }
+        );
     }
 }
