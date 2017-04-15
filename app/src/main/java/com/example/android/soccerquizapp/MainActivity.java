@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_1);
 
         //Call method which checks for user action
-        checkMarked(findViewById(R.id.radio_button_a_q1), findViewById(R.id.radio_button_b_q1), findViewById(R.id.radio_button_c_q1), findViewById(R.id.nb1));
+        checkMarked(findViewById(R.id.r_group_1), findViewById(R.id.radio_button_a_q1), findViewById(R.id.radio_button_b_q1), findViewById(R.id.radio_button_c_q1), findViewById(R.id.nb1));
     }
 
     /**
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_2);
 
         //Call method which checks for user action
-        checkMarked(findViewById(R.id.radio_button_a_q2), findViewById(R.id.radio_button_b_q2), findViewById(R.id.radio_button_c_q2), findViewById(R.id.nb2));
+        checkMarked(findViewById(R.id.r_group_2), findViewById(R.id.radio_button_a_q2), findViewById(R.id.radio_button_b_q2), findViewById(R.id.radio_button_c_q2), findViewById(R.id.nb2));
     }
 
     /**
@@ -67,24 +67,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 3
         setContentView(R.layout.question_3);
 
-        //Check for user input. If text has been put in, show Next button.
-        EditText answer3 = (EditText) findViewById(R.id.answer_question_3);
-        answer3.addTextChangedListener(new TextWatcher() {
-                                           @Override
-                                           public void afterTextChanged(Editable s) {
-                                           }
-
-                                           @Override
-                                           public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                                           }
-
-                                           @Override
-                                           public void onTextChanged(CharSequence s, int start, int before, int count) {
-                                               View nb3 = findViewById(R.id.nb3);
-                                               nb3.setVisibility(View.VISIBLE);
-                                           }
-                                       }
-        );
+        //Call method which checks for user input
+        checkForInput(findViewById(R.id.answer_question_3), findViewById(R.id.nb3));
     }
 
     /**
@@ -107,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_4);
 
         //Call method which checks for user action
-        checkMarked(findViewById(R.id.radio_button_a_q4), findViewById(R.id.radio_button_b_q4), findViewById(R.id.radio_button_c_q4), findViewById(R.id.nb4));
+        checkMarked(findViewById(R.id.r_group_4), findViewById(R.id.radio_button_a_q4), findViewById(R.id.radio_button_b_q4), findViewById(R.id.radio_button_c_q4), findViewById(R.id.nb4));
     }
 
     /**
@@ -126,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_5);
 
         //Call method which checks for user action
-        checkMarked(findViewById(R.id.radio_button_a_q5), findViewById(R.id.radio_button_b_q5), findViewById(R.id.radio_button_c_q5), findViewById(R.id.nb5));
+        checkMarked(findViewById(R.id.r_group_5), findViewById(R.id.radio_button_a_q5), findViewById(R.id.radio_button_b_q5), findViewById(R.id.radio_button_c_q5), findViewById(R.id.nb5));
     }
 
     /**
@@ -145,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_6);
 
         //Call method which checks for user action
-        checkMarked(findViewById(R.id.radio_button_a_q6), findViewById(R.id.radio_button_b_q6), findViewById(R.id.radio_button_c_q6), findViewById(R.id.nb6));
+        checkMarked(findViewById(R.id.r_group_6), findViewById(R.id.radio_button_a_q6), findViewById(R.id.radio_button_b_q6), findViewById(R.id.radio_button_c_q6), findViewById(R.id.nb6));
     }
 
     /**
@@ -163,24 +147,8 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 7
         setContentView(R.layout.question_7);
 
-        //Check for user input. If text has been put in, show Next button.
-        EditText answer3 = (EditText) findViewById(R.id.answer_question_7);
-        answer3.addTextChangedListener(new TextWatcher() {
-                                           @Override
-                                           public void afterTextChanged(Editable s) {
-                                           }
-
-                                           @Override
-                                           public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                                           }
-
-                                           @Override
-                                           public void onTextChanged(CharSequence s, int start, int before, int count) {
-                                               View nb7 = findViewById(R.id.nb7);
-                                               nb7.setVisibility(View.VISIBLE);
-                                           }
-                                       }
-        );
+        //Call method which checks for user input
+        checkForInput(findViewById(R.id.answer_question_7), findViewById(R.id.nb7));
     }
 
     /**
@@ -202,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         //Show question number 8
         setContentView(R.layout.question_8);
 
-        //Check if a checkbox has been marked, and, if so, display Next button
+        //Check if a checkbox has been marked. If so, display Save and View Results button.
         final CheckBox cb1 = (CheckBox) findViewById(R.id.goalkeeper_checkbox);
         final CheckBox cb2 = (CheckBox) findViewById(R.id.quarterback_checkbox);
         final CheckBox cb3 = (CheckBox) findViewById(R.id.defender_checkbox);
@@ -251,23 +219,59 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.score_message, score), Toast.LENGTH_LONG).show();
     }
 
-    private void checkMarked(View id1, View id2, View id3, View nbx) {
+    /**
+     * Check if a radio button has been clicked. If so, set Next button visible.
+     *
+     * @param rgx RadioGroup of the corresponding RadioButtons
+     * @param id1 1st RadioButton of the corresponding RadioGroup
+     * @param id2 2nd RadioButton of the corresponding RadioGroup
+     * @param id3 3rd RadioButton of the corresponding RadioGroup
+     * @param nbx NextButton of the actually displayed and method calling activity
+     */
+    private void checkMarked(View rgx, View id1, View id2, View id3, View nbx) {
 
         //Check if a radio button has been clicked, and, if so, display Next button
+        final RadioGroup rg = (RadioGroup) rgx;
         final RadioButton rb1 = (RadioButton) id1;
         final RadioButton rb2 = (RadioButton) id2;
         final RadioButton rb3 = (RadioButton) id3;
         final Button nb = (Button) nbx;
 
-        RadioGroup rg1 = (RadioGroup) findViewById(R.id.r_group_1);
-        rg1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                                           @Override
-                                           public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                               if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
-                                                   nb.setVisibility(View.VISIBLE);
-                                               }
-                                           }
-                                       }
+        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                                          @Override
+                                          public void onCheckedChanged(RadioGroup group, int checkedId) {
+                                              if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
+                                                  nb.setVisibility(View.VISIBLE);
+                                              }
+                                          }
+                                      }
+        );
+    }
+
+    /**
+     * Check for user input. If text has been put in, show Next button.
+     *
+     * @param answerx EditText field of the respective question.
+     * @param nbx     Next button of the respective question.
+     */
+    private void checkForInput(View answerx, View nbx) {
+        final EditText answer = (EditText) answerx;
+        final Button nb = (Button) nbx;
+
+        answer.addTextChangedListener(new TextWatcher() {
+                                          @Override
+                                          public void afterTextChanged(Editable s) {
+                                          }
+
+                                          @Override
+                                          public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                                          }
+
+                                          @Override
+                                          public void onTextChanged(CharSequence s, int start, int before, int count) {
+                                              nb.setVisibility(View.VISIBLE);
+                                          }
+                                      }
         );
     }
 }
