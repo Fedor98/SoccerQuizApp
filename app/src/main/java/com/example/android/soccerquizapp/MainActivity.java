@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.question_1);
 
         //Call method which checks for user action
-        checkMarked(findViewById(R.id.r_group_1), findViewById(R.id.radio_button_a_q1), findViewById(R.id.radio_button_b_q1), findViewById(R.id.radio_button_c_q1), findViewById(R.id.nb1));
+        checkMarked(findViewById(R.id.r_group_1), findViewById(R.id.radio_button_a_q1),
+                findViewById(R.id.radio_button_b_q1), findViewById(R.id.radio_button_c_q1),
+                findViewById(R.id.nb1));
     }
 
     /**
