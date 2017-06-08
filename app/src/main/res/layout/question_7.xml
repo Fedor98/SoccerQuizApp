@@ -5,25 +5,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.soccerquizapp.MainActivity">
 
-<LinearLayout style="@style/LinearLayoutTheme">
+    <LinearLayout style="@style/LinearLayoutTheme">
 
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/q_7"/>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/q_7" />
 
-    <TextView
-        style="@style/QuestionTextView"
-        android:text="@string/question_7" />
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question_7" />
 
-    <EditText
-        android:id="@+id/answer_question_7"
-        style="@style/EditTextTheme"
-        android:hint="@string/hint_q7" />
+        <EditText
+            android:id="@+id/answer_question_7"
+            style="@style/EditTextTheme"
+            android:hint="@string/hint_q7" />
 
-    <Button
-        android:id="@+id/nb7"
-        style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
-        android:onClick="nextQuestion7" />
+        <Button
+            android:id="@+id/nb7"
+            style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
+            android:onClick="nextQuestion7" />
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

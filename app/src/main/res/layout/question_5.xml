@@ -5,40 +5,40 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.soccerquizapp.MainActivity">
 
-<LinearLayout style="@style/LinearLayoutTheme">
+    <LinearLayout style="@style/LinearLayoutTheme">
 
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/q_5"/>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/q_5" />
 
-    <TextView
-        style="@style/QuestionTextView"
-        android:text="@string/question_5" />
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question_5" />
 
-    <RadioGroup
-        android:id="@+id/r_group_5"
-        style="@style/RadioGroupTheme">
+        <RadioGroup
+            android:id="@+id/r_group_5"
+            style="@style/RadioGroupTheme">
 
-        <RadioButton
-            android:id="@+id/radio_button_a_q5"
-            style="@style/RadioButtonTheme"
-            android:text="@string/answer_5_a" />
+            <RadioButton
+                android:id="@+id/radio_button_a_q5"
+                style="@style/RadioButtonTheme"
+                android:text="@string/answer_5_a" />
 
-        <RadioButton
-            android:id="@+id/radio_button_b_q5"
-            style="@style/RadioButtonTheme"
-            android:text="@string/answer_5_b" />
+            <RadioButton
+                android:id="@+id/radio_button_b_q5"
+                style="@style/RadioButtonTheme"
+                android:text="@string/answer_5_b" />
 
-        <RadioButton
-            android:id="@+id/radio_button_c_q5"
-            style="@style/RadioButtonTheme"
-            android:text="@string/answer_5_c" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radio_button_c_q5"
+                style="@style/RadioButtonTheme"
+                android:text="@string/answer_5_c" />
+        </RadioGroup>
 
-    <Button
-        android:id="@+id/nb5"
-        style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
-        android:onClick="nextQuestion5" />
+        <Button
+            android:id="@+id/nb5"
+            style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
+            android:onClick="nextQuestion5" />
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

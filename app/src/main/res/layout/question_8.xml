@@ -5,46 +5,46 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.soccerquizapp.MainActivity">
 
-<LinearLayout style="@style/LinearLayoutTheme">
+    <LinearLayout style="@style/LinearLayoutTheme">
 
-    <TextView
-        style="@style/HeaderTextStyle"
-        android:text="@string/q_8"/>
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/q_8" />
 
-    <TextView
-        style="@style/QuestionTextView"
-        android:text="@string/question_8" />
+        <TextView
+            style="@style/QuestionTextView"
+            android:text="@string/question_8" />
 
-    <CheckBox
-        android:id="@+id/goalkeeper_checkbox"
-        style="@style/CheckBoxTheme"
-        android:text="@string/option_8_a" />
+        <CheckBox
+            android:id="@+id/goalkeeper_checkbox"
+            style="@style/CheckBoxTheme"
+            android:text="@string/option_8_a" />
 
-    <CheckBox
-        android:id="@+id/quarterback_checkbox"
-        style="@style/CheckBoxTheme"
-        android:text="@string/option_8_b" />
+        <CheckBox
+            android:id="@+id/quarterback_checkbox"
+            style="@style/CheckBoxTheme"
+            android:text="@string/option_8_b" />
 
-    <CheckBox
-        android:id="@+id/defender_checkbox"
-        style="@style/CheckBoxTheme"
-        android:text="@string/option_8_c" />
+        <CheckBox
+            android:id="@+id/defender_checkbox"
+            style="@style/CheckBoxTheme"
+            android:text="@string/option_8_c" />
 
-    <CheckBox
-        android:id="@+id/center_checkbox"
-        style="@style/CheckBoxTheme"
-        android:text="@string/option_8_d" />
+        <CheckBox
+            android:id="@+id/center_checkbox"
+            style="@style/CheckBoxTheme"
+            android:text="@string/option_8_d" />
 
-    <CheckBox
-        android:id="@+id/striker_checkbox"
-        style="@style/CheckBoxTheme"
-        android:text="@string/option_8_e" />
+        <CheckBox
+            android:id="@+id/striker_checkbox"
+            style="@style/CheckBoxTheme"
+            android:text="@string/option_8_e" />
 
-    <Button
-        android:id="@+id/savr_button"
-        style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
-        android:onClick="submitAndViewResults"
-        android:text="@string/submit_view_results" />
+        <Button
+            android:id="@+id/savr_button"
+            style="@style/StartQuizButtonTheme.NQSVRButtonTheme"
+            android:onClick="submitAndViewResults"
+            android:text="@string/submit_view_results" />
 
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>
