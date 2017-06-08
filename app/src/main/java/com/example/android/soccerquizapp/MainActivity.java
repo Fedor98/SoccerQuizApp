@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
     public void nextQuestion7(View view) {
         //Get answer text
         EditText colors = (EditText) findViewById(R.id.answer_question_7);
-        String answer7 = colors.getText().toString();
+        String answer7 = colors.getText().toString().toLowerCase().trim();
 
         /*
         Check whether the input equals either "red and yellow" or "yellow and red",
@@ -199,15 +199,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitAndViewResults(View view) {
         //Checks whether the correct checkboxes are marked in Question 8
-        CheckBox checkBoxEightGoalkeeper = (CheckBox) findViewById(R.id.goalkeeper_checkbox);
-        boolean checkedGoalkeeper = checkBoxEightGoalkeeper.isChecked();
-        CheckBox checkBoxEightDefender = (CheckBox) findViewById(R.id.defender_checkbox);
-        boolean checkedDefender = checkBoxEightDefender.isChecked();
-        CheckBox checkBoxEightStriker = (CheckBox) findViewById(R.id.striker_checkbox);
-        boolean checkedStriker = checkBoxEightStriker.isChecked();
+        final CheckBox cb1 = (CheckBox) findViewById(R.id.goalkeeper_checkbox);
+        final CheckBox cb2 = (CheckBox) findViewById(R.id.quarterback_checkbox);
+        final CheckBox cb3 = (CheckBox) findViewById(R.id.defender_checkbox);
+        final CheckBox cb4 = (CheckBox) findViewById(R.id.center_checkbox);
+        final CheckBox cb5 = (CheckBox) findViewById(R.id.striker_checkbox);
 
         //If the correct answers have been selected, increase score by 1
-        if (checkedGoalkeeper && checkedDefender && checkedStriker) {
+        if (cb1.isChecked() && !cb2.isChecked() && cb3.isChecked() && !cb4.isChecked() &&
+                cb5.isChecked()) {
             score += 1;
         }
 
