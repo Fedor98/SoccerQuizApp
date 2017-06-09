@@ -210,6 +210,14 @@ public class MainActivity extends AppCompatActivity {
         //If the correct answers have been selected, increase score by 1
         if (cb1.isChecked() && !cb2.isChecked() && cb3.isChecked() && !cb4.isChecked() &&
                 cb5.isChecked()) {
+            score += 3;
+        }
+        else if (cb1.isChecked() && !cb2.isChecked() && cb3.isChecked() && !cb4.isChecked() &&
+                !cb5.isChecked()) {
+            score += 2;
+        }
+        else if (cb1.isChecked() && !cb2.isChecked() && !cb3.isChecked() && !cb4.isChecked() &&
+                !cb5.isChecked()) {
             score += 1;
         }
 
